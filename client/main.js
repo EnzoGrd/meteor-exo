@@ -1,18 +1,8 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
+import './form.html';
+import './form.js';
+import './view.html';
+import './view.js';
 import './main.html';
-
-
-if (Meteor.isClient) {
-
-  Template.form.events({
-
-    'submit form': function(event) {
-      event.preventDefault();
-      var textValue = event.target.name.value;
-      console.log(textValue);
-      event.target.submit.value = "";
-    }
-  });
-}

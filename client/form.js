@@ -5,7 +5,7 @@ Template.form.events
 
 Template.form.events
 ({"click #button" : function(event, template) {
-    people.insert({
+    base.insert({
       name : template.find( "#name" ).value,
     }
   )}
